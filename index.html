@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EliteSpace | Luxury Turnkey Renovations</title>
+    <meta name="description" content="Complete premium renovations with design, furniture, and smart home integration. Delivered on time or we compensate.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader-logo">
+            <svg><!-- Luxury logo SVG --></svg>
+        </div>
+    </div>
+
+    <!-- Video Hero -->
+    <section class="video-hero">
+        <div class="video-background">
+            <video autoplay muted loop id="heroVideo">
+                <source src="videos/luxury-renovation-hero.mp4" type="video/mp4">
+            </video>
+            <div class="video-overlay"></div>
+        </div>
+        
+        <div class="hero-content">
+            <h1 class="hero-title">Redefining Living Spaces</h1>
+            <p class="hero-subtitle">Complete luxury renovations delivered on time, with 1-year warranty</p>
+            <a href="#tiers" class="hero-cta">Explore Our Tiers</a>
+        </div>
+        
+        <div class="scroll-indicator">
+            <span></span>
+        </div>
+    </section>
+
+    <!-- Luxury Tiers Section -->
+    <section id="tiers" class="tiers-section">
+        <div class="section-header">
+            <h2>Our Renovation Tiers</h2>
+            <p>Four levels of excellence to match your vision</p>
+        </div>
+        
+        <div class="tiers-container">
+            <!-- Premium Eco Tier -->
+            <div class="tier-card" data-tier="premium-eco">
+                <div class="tier-front">
+                    <h3>Premium Eco</h3>
+                    <p class="price">From $250/m²</p>
+                    <div class="tier-image" style="background-image: url('images/premium-eco.jpg')"></div>
+                </div>
+                <div class="tier-back">
+                    <h3>Premium Eco</h3>
+                    <ul class="tier-features">
+                        <li>Grohe, Ideal Standard, Vitra</li>
+                        <li>Turkish premium ceramics</li>
+                        <li>Schneider/ABB electrical</li>
+                        <li>Daikin/Bosch climate</li>
+                    </ul>
+                    <button class="tier-details">View Details</button>
+                </div>
+            </div>
+            
+            <!-- Other tiers would follow same pattern -->
+        </div>
+    </section>
+
+    <!-- Materials Showcase -->
+    <section class="materials-section">
+        <!-- Interactive brand showcase -->
+    </section>
+
+    <!-- Process Timeline -->
+    <section class="process-section">
+        <!-- Horizontal scrolling timeline -->
+    </section>
+
+    <!-- Before/After -->
+    <section class="comparison-section">
+        <!-- Interactive slider -->
+    </section>
+
+    <!-- Calculator -->
+    <section class="calculator-section">
+        <!-- Elegant pricing calculator -->
+    </section>
+
+    <section class="materials-section">
+        <div class="section-header">
+            <h2>Premium Materials & Brands</h2>
+            <p>We partner with world-class manufacturers</p>
+        </div>
+        
+        <div class="materials-grid">
+            <div class="material-category">
+                <h3>Flooring</h3>
+                <div class="material-brands">
+                    <div class="brand-logo" data-brand="rakia">
+                        <img src="images/brands/rakia.png" alt="Rakia Ceramics">
+                        <div class="brand-info">Premium Turkish ceramics</div>
+                    </div>
+                    <!-- More brand logos -->
+                </div>
+            </div>
+            
+            <div class="material-category">
+                <h3>Sanitaryware</h3>
+                <div class="material-brands">
+                    <div class="brand-logo" data-brand="grohe">
+                        <img src="images/brands/grohe.png" alt="Grohe">
+                        <div class="brand-info">German-engineered perfection</div>
+                    </div>
+                    <!-- More brand logos -->
+                </div>
+            </div>
+            
+            <!-- Additional categories -->
+        </div>
+    </section>
+
+    <!-- Process Timeline -->
+    <section class="process-section">
+        <div class="section-header">
+            <h2>Our Seamless Process</h2>
+            <p>From concept to completion in 4 simple phases</p>
+        </div>
+        
+        <div class="timeline-container">
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-number">1</div>
+                        <h3>Design Consultation</h3>
+                        <p>Initial meeting to understand your vision and requirements</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-number">2</div>
+                        <h3>3D Visualization</h3>
+                        <p>Photorealistic renderings of your future space</p>
+                    </div>
+                </div>
+                
+                <!-- More timeline items -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Before/After Comparison -->
+    <section class="comparison-section">
+        <div class="section-header">
+            <h2>Transformation Gallery</h2>
+            <p>See the dramatic changes we've created</p>
+        </div>
+        
+        <div class="comparison-slider">
+            <div class="before">
+                <img src="images/before-1.jpg" alt="Before renovation">
+                <div class="label">Before</div>
+            </div>
+            <div class="after">
+                <img src="images/after-1.jpg" alt="After renovation">
+                <div class="label">After</div>
+            </div>
+            <input type="range" min="0" max="100" value="50" class="slider">
+        </div>
+        
+        <div class="comparison-nav">
+            <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+            <div class="dots"></div>
+            <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+
+    <!-- Pricing Calculator -->
+    <section class="calculator-section">
+        <div class="calculator-container">
+            <div class="calculator-form">
+                <h2>Estimate Your Project</h2>
+                
+                <div class="form-group">
+                    <label for="property-type">Property Type</label>
+                    <select id="property-type">
+                        <option value="apartment">Apartment</option>
+                        <option value="commercial">Commercial Space</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="square-meters">Square Meters</label>
+                    <input type="range" id="square-meters" min="100" max="400" value="150">
+                    <div class="range-value"><span id="meters-value">150</span> m²</div>
+                </div>
+                
+                <div class="form-group">
+                    <label>Renovation Tier</label>
+                    <div class="tier-options">
+                        <div class="tier-option" data-tier="premium-eco">
+                            <input type="radio" name="tier" id="tier1" checked>
+                            <label for="tier1">Premium Eco</label>
+                        </div>
+                        <!-- More tier options -->
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="smart-home">Smart Home Package</label>
+                    <div class="toggle-switch">
+                        <input type="checkbox" id="smart-home">
+                        <label for="smart-home"></label>
+                    </div>
+                </div>
+                
+                <div class="calculator-result">
+                    <div class="result-label">Estimated Cost</div>
+                    <div class="result-amount">$<span id="total-cost">37,500</span></div>
+                    <div class="result-note">Includes design, renovation, furniture and 1-year warranty</div>
+                </div>
+                
+                <button class="calculator-cta">Request Detailed Proposal</button>
+            </div>
+            
+            <div class="calculator-image">
+                <img src="images/calculator-visual.jpg" alt="Luxury renovation">
+            </div>
+        </div>
+    </section>
+
+    <!-- Warranty Section -->
+    <section class="warranty-section">
+        <div class="warranty-card">
+            <div class="warranty-icon">
+                <i class="fas fa-shield-alt"></i>
+            </div>
+            <h2>365-Day Warranty</h2>
+            <p>We guarantee all our work for a full year - if any issues arise, we'll fix them at no additional cost</p>
+            <div class="warranty-features">
+                <div class="feature">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Materials defects coverage</span>
+                </div>
+                <!-- More features -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials-section">
+        <!-- Testimonial slider -->
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <!-- Elegant contact form -->
+    </section>
+
+    <!-- Footer -->
+    <footer class="luxury-footer">
+        <!-- Premium footer with subtle animations -->
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html>
