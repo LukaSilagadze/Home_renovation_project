@@ -11,6 +11,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
     
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animations.css">
@@ -22,7 +25,10 @@
     <!-- Preloader -->
     <div class="preloader">
         <div class="preloader-logo">
-            <svg><!-- Luxury logo SVG --></svg>
+            <svg width="150" height="150" viewBox="0 0 150 150">
+                <circle cx="75" cy="75" r="70" fill="none" stroke="#d4af37" stroke-width="3"/>
+                <text x="75" y="85" text-anchor="middle" fill="#d4af37" font-family="Playfair Display" font-size="24" font-weight="bold">ES</text>
+            </svg>
         </div>
     </div>
 
@@ -30,7 +36,7 @@
     <section class="video-hero">
         <div class="video-background">
             <video autoplay muted loop id="heroVideo">
-                <source src="videos/luxury-renovation-hero.mp4" type="video/mp4">
+                <source src="videos/3773486-hd_1920_1080_30fps.mp4" type="video/mp4">
             </video>
             <div class="video-overlay"></div>
         </div>
@@ -38,6 +44,24 @@
         <div class="hero-content">
             <h1 class="hero-title">Redefining Living Spaces</h1>
             <p class="hero-subtitle">Complete luxury renovations delivered on time, with 1-year warranty</p>
+            <div class="hero-features">
+                <div class="feature">
+                    <i class="fas fa-palette"></i>
+                    <span>Complete Design</span>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-tools"></i>
+                    <span>Full Renovation</span>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-couch"></i>
+                    <span>Furniture Included</span>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>1-Year Warranty</span>
+                </div>
+            </div>
             <a href="#tiers" class="hero-cta">Explore Our Tiers</a>
         </div>
         
@@ -50,53 +74,233 @@
     <section id="tiers" class="tiers-section">
         <div class="section-header">
             <h2>Our Renovation Tiers</h2>
-            <p>Four levels of excellence to match your vision</p>
+            <p>Four levels of excellence to match your vision and budget</p>
         </div>
         
         <div class="tiers-container">
             <!-- Premium Eco Tier -->
             <div class="tier-card" data-tier="premium-eco">
                 <div class="tier-front">
+                    <div class="tier-badge">Most Popular</div>
                     <h3>Premium Eco</h3>
                     <p class="price">From $250/m²</p>
                     <div class="tier-image" style="background-image: url('images/premium-eco.jpg')"></div>
+                    <div class="tier-highlights">
+                        <span><i class="fas fa-check"></i> Complete Design</span>
+                        <span><i class="fas fa-check"></i> Full Renovation</span>
+                        <span><i class="fas fa-check"></i> Furniture Included</span>
+                    </div>
                 </div>
                 <div class="tier-back">
                     <h3>Premium Eco</h3>
-                    <ul class="tier-features">
-                        <li>Grohe, Ideal Standard, Vitra</li>
-                        <li>Turkish premium ceramics</li>
-                        <li>Schneider/ABB electrical</li>
-                        <li>Daikin/Bosch climate</li>
-                    </ul>
+                    <div class="specifications">
+                        <div class="spec-category">
+                            <h4>Bathroom Equipment</h4>
+                            <p>Grohe, Ideal Standard, Vitra</p>
+                        </div>
+                        <div class="spec-category">
+                            <h4>Flooring</h4>
+                            <p>Vinyl or laminate parquet</p>
+                        </div>
+                        <div class="spec-category">
+                            <h4>Electrical</h4>
+                            <p>Schneider/ABB systems</p>
+                        </div>
+                        <div class="spec-category">
+                            <h4>Climate</h4>
+                            <p>Daikin/Bosch/Mitsubishi</p>
+                        </div>
+                        <div class="spec-category">
+                            <h4>Ceramics</h4>
+                            <p>Turkish premium ceramics</p>
+                        </div>
+                    </div>
                     <button class="tier-details">View Details</button>
                 </div>
             </div>
             
-            <!-- Other tiers would follow same pattern -->
+            <!-- Premium Tier -->
+            <div class="tier-card" data-tier="premium">
+                <div class="tier-front">
+                    <h3>Premium</h3>
+                    <p class="price">From $350/m²</p>
+                    <div class="tier-image" style="background-image: url('images/premium.jpg')"></div>
+                    <div class="tier-highlights">
+                        <span><i class="fas fa-check"></i> Complete Design</span>
+                        <span><i class="fas fa-check"></i> Full Renovation</span>
+                        <span><i class="fas fa-check"></i> Furniture Included</span>
+                    </div>
+                </div>
+                <div class="tier-back">
+                    <h3>Premium</h3>
+                    <div class="specifications">
+                        <div class="spec-category">
+                            <h4>Bathroom Equipment</h4>
+                            <p>European mid-range brands</p>
+                        </div>
+                        <div class="spec-category">
+                            <h4>Flooring</h4>
+                            <p>Engineered wood or premium laminate</p>
+                        </div>
+                        <div class="spec-category">
+                            <h4>Electrical</h4>
+                            <p>Premium European systems</p>
+                        </div>
+                        <div class="spec-category">
+                            <h4>Climate</h4>
+                            <p>Premium European brands</p>
+                        </div>
+                        <div class="spec-category">
+                            <h4>Ceramics</h4>
+                            <p>European premium ceramics</p>
+                        </div>
+                    </div>
+                    <button class="tier-details">View Details</button>
+                </div>
+            </div>
+            
+            <!-- Luxury Tier -->
+            <div class="tier-card" data-tier="luxury">
+                <div class="tier-front">
+                    <h3>Luxury</h3>
+                    <p class="price">From $450/m²</p>
+                    <div class="tier-image" style="background-image: url('images/luxury.jpg')"></div>
+                    <div class="tier-highlights">
+                        <span><i class="fas fa-check"></i> Complete Design</span>
+                        <span><i class="fas fa-check"></i> Full Renovation</span>
+                        <span><i class="fas fa-check"></i> Furniture Included</span>
+                    </div>
+                </div>
+                <div class="tier-back">
+                    <h3>Luxury</h3>
+                    <div class="specifications">
+                        <div class="spec-category">
+                            <h4>Bathroom Equipment</h4>
+                            <p>Italian & German premium brands</p>
+                        </div>
+                        <div class="spec-category">
+                            <h4>Flooring</h4>
+                            <p>Solid wood or premium engineered</p>
+                        </div>
+                        <div class="spec-category">
+                            <h4>Electrical</h4>
+                            <p>Luxury European systems</p>
+                        </div>
+                        <div class="spec-category">
+                            <h4>Climate</h4>
+                            <p>Premium Italian/German systems</p>
+                        </div>
+                        <div class="spec-category">
+                            <h4>Ceramics</h4>
+                            <p>Italian premium ceramics</p>
+                        </div>
+                    </div>
+                    <button class="tier-details">View Details</button>
+                </div>
+            </div>
+            
+            <!-- Ultra Luxury Tier -->
+            <div class="tier-card" data-tier="ultra-luxury">
+                <div class="tier-front">
+                    <div class="tier-badge premium">Ultra Premium</div>
+                    <h3>Ultra Luxury</h3>
+                    <p class="price">From $750/m²</p>
+                    <div class="tier-image" style="background-image: url('images/ultra-luxury.jpg')"></div>
+                    <div class="tier-highlights">
+                        <span><i class="fas fa-check"></i> Complete Design</span>
+                        <span><i class="fas fa-check"></i> Full Renovation</span>
+                        <span><i class="fas fa-check"></i> Smart Home Integration</span>
+                    </div>
+                </div>
+                <div class="tier-back">
+                    <h3>Ultra Luxury</h3>
+                    <div class="specifications">
+                        <div class="spec-category">
+                            <h4>Bathroom Equipment</h4>
+                            <p>European top premium brands</p>
+                        </div>
+                        <div class="spec-category">
+                            <h4>Smart Systems</h4>
+                            <p>Voice control, smart toilets</p>
+                        </div>
+                        <div class="spec-category">
+                            <h4>Lighting & Sound</h4>
+                            <p>Smart control systems</p>
+                        </div>
+                        <div class="spec-category">
+                            <h4>Climate</h4>
+                            <p>Ultra-modern smart systems</p>
+                        </div>
+                        <div class="spec-category">
+                            <h4>Materials</h4>
+                            <p>Designer premium materials</p>
+                        </div>
+                    </div>
+                    <button class="tier-details">View Details</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What's Included Section -->
+    <section class="included-section">
+        <div class="section-header">
+            <h2>What's Included in Every Project</h2>
+            <p>Complete turnkey solution - no hidden costs</p>
+        </div>
+        
+        <div class="included-grid">
+            <div class="included-item">
+                <div class="included-icon">
+                    <i class="fas fa-palette"></i>
+                </div>
+                <h3>Complete Interior Design</h3>
+                <p>Full design of all rooms, zones, and technical areas with photorealistic renderings and 2-3 revisions included</p>
+            </div>
+            
+            <div class="included-item">
+                <div class="included-icon">
+                    <i class="fas fa-tools"></i>
+                </div>
+                <h3>Full Renovation</h3>
+                <p>Complete renovation with all equipment - no subcontractors or DIY elements. We handle everything</p>
+            </div>
+            
+            <div class="included-item">
+                <div class="included-icon">
+                    <i class="fas fa-couch"></i>
+                </div>
+                <h3>Furniture & Equipment</h3>
+                <p>All furniture according to approved design, plus built-in equipment, appliances, and electronics</p>
+            </div>
+            
+            <div class="included-item">
+                <div class="included-icon">
+                    <i class="fas fa-cut"></i>
+                </div>
+                <h3>Custom Curtains</h3>
+                <p>Custom-made curtains with professional sewing, matching the design color scheme and style</p>
+            </div>
+            
+            <div class="included-item">
+                <div class="included-icon">
+                    <i class="fas fa-broom"></i>
+                </div>
+                <h3>Complete Cleaning</h3>
+                <p>Professional cleaning and tidying included in the final price - move-in ready</p>
+            </div>
+            
+            <div class="included-item">
+                <div class="included-icon">
+                    <i class="fas fa-calendar-check"></i>
+                </div>
+                <h3>Guaranteed Timeline</h3>
+                <p>Strict deadlines with financial compensation if we exceed the agreed timeframe</p>
+            </div>
         </div>
     </section>
 
     <!-- Materials Showcase -->
-    <section class="materials-section">
-        <!-- Interactive brand showcase -->
-    </section>
-
-    <!-- Process Timeline -->
-    <section class="process-section">
-        <!-- Horizontal scrolling timeline -->
-    </section>
-
-    <!-- Before/After -->
-    <section class="comparison-section">
-        <!-- Interactive slider -->
-    </section>
-
-    <!-- Calculator -->
-    <section class="calculator-section">
-        <!-- Elegant pricing calculator -->
-    </section>
-
     <section class="materials-section">
         <div class="section-header">
             <h2>Premium Materials & Brands</h2>
@@ -111,7 +315,14 @@
                         <img src="images/brands/rakia.png" alt="Rakia Ceramics">
                         <div class="brand-info">Premium Turkish ceramics</div>
                     </div>
-                    <!-- More brand logos -->
+                    <div class="brand-logo" data-brand="vitra">
+                        <img src="images/brands/vitra.png" alt="Vitra">
+                        <div class="brand-info">German engineering excellence</div>
+                    </div>
+                    <div class="brand-logo" data-brand="kutaisi">
+                        <img src="images/brands/kutaisi.png" alt="Kutaisi">
+                        <div class="brand-info">Premium Turkish ceramics</div>
+                    </div>
                 </div>
             </div>
             
@@ -122,11 +333,48 @@
                         <img src="images/brands/grohe.png" alt="Grohe">
                         <div class="brand-info">German-engineered perfection</div>
                     </div>
-                    <!-- More brand logos -->
+                    <div class="brand-logo" data-brand="ideal-standard">
+                        <img src="images/brands/ideal-standard.png" alt="Ideal Standard">
+                        <div class="brand-info">European quality standards</div>
+                    </div>
+                    <div class="brand-logo" data-brand="vitra">
+                        <img src="images/brands/vitra.png" alt="Vitra">
+                        <div class="brand-info">Swiss precision engineering</div>
+                    </div>
                 </div>
             </div>
             
-            <!-- Additional categories -->
+            <div class="material-category">
+                <h3>Electrical Systems</h3>
+                <div class="material-brands">
+                    <div class="brand-logo" data-brand="schneider">
+                        <img src="images/brands/schneider.png" alt="Schneider Electric">
+                        <div class="brand-info">French electrical excellence</div>
+                    </div>
+                    <div class="brand-logo" data-brand="abb">
+                        <img src="images/brands/abb.png" alt="ABB">
+                        <div class="brand-info">Swiss-Swedish innovation</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="material-category">
+                <h3>Climate Systems</h3>
+                <div class="material-brands">
+                    <div class="brand-logo" data-brand="daikin">
+                        <img src="images/brands/daikin.png" alt="Daikin">
+                        <div class="brand-info">Japanese climate technology</div>
+                    </div>
+                    <div class="brand-logo" data-brand="bosch">
+                        <img src="images/brands/bosch.png" alt="Bosch">
+                        <div class="brand-info">German engineering</div>
+                    </div>
+                    <div class="brand-logo" data-brand="mitsubishi">
+                        <img src="images/brands/mitsubishi.png" alt="Mitsubishi">
+                        <div class="brand-info">Japanese precision</div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -143,7 +391,8 @@
                     <div class="timeline-content">
                         <div class="timeline-number">1</div>
                         <h3>Design Consultation</h3>
-                        <p>Initial meeting to understand your vision and requirements</p>
+                        <p>Initial meeting to understand your vision, requirements, and budget. We discuss your lifestyle, preferences, and create a detailed brief.</p>
+                        <div class="timeline-duration">1-2 days</div>
                     </div>
                 </div>
                 
@@ -151,11 +400,28 @@
                     <div class="timeline-content">
                         <div class="timeline-number">2</div>
                         <h3>3D Visualization</h3>
-                        <p>Photorealistic renderings of your future space</p>
+                        <p>Our designers create photorealistic renderings of your future space. You'll see exactly how your renovation will look before we start.</p>
+                        <div class="timeline-duration">5-7 days</div>
                     </div>
                 </div>
                 
-                <!-- More timeline items -->
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-number">3</div>
+                        <h3>Contract & Planning</h3>
+                        <p>Once you approve the design, we sign the contract with guaranteed timeline and begin detailed project planning and material procurement.</p>
+                        <div class="timeline-duration">2-3 days</div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-number">4</div>
+                        <h3>Execution & Delivery</h3>
+                        <p>Our professional team executes the renovation according to the approved design. We handle everything from demolition to final cleaning.</p>
+                        <div class="timeline-duration">4-8 weeks</div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -169,11 +435,11 @@
         
         <div class="comparison-slider">
             <div class="before">
-                <img src="images/before-1.jpg" alt="Before renovation">
+                <img src="images/unrenovated.jpeg" alt="Before renovation">
                 <div class="label">Before</div>
             </div>
             <div class="after">
-                <img src="images/after-1.jpg" alt="After renovation">
+                <img src="images/renovated.jpeg" alt="After renovation">
                 <div class="label">After</div>
             </div>
             <input type="range" min="0" max="100" value="50" class="slider">
@@ -191,6 +457,7 @@
         <div class="calculator-container">
             <div class="calculator-form">
                 <h2>Estimate Your Project</h2>
+                <p class="calculator-subtitle">Get an instant estimate for your renovation project</p>
                 
                 <div class="form-group">
                     <label for="property-type">Property Type</label>
@@ -213,7 +480,18 @@
                             <input type="radio" name="tier" id="tier1" checked>
                             <label for="tier1">Premium Eco</label>
                         </div>
-                        <!-- More tier options -->
+                        <div class="tier-option" data-tier="premium">
+                            <input type="radio" name="tier" id="tier2">
+                            <label for="tier2">Premium</label>
+                        </div>
+                        <div class="tier-option" data-tier="luxury">
+                            <input type="radio" name="tier" id="tier3">
+                            <label for="tier3">Luxury</label>
+                        </div>
+                        <div class="tier-option" data-tier="ultra-luxury">
+                            <input type="radio" name="tier" id="tier4">
+                            <label for="tier4">Ultra Luxury</label>
+                        </div>
                     </div>
                 </div>
                 
@@ -253,27 +531,233 @@
                     <i class="fas fa-check-circle"></i>
                     <span>Materials defects coverage</span>
                 </div>
-                <!-- More features -->
+                <div class="feature">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Workmanship warranty</span>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Equipment functionality</span>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-check-circle"></i>
+                    <span>24/7 support hotline</span>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Testimonials -->
     <section class="testimonials-section">
-        <!-- Testimonial slider -->
+        <div class="section-header">
+            <h2>What Our Clients Say</h2>
+            <p>Real experiences from satisfied customers</p>
+        </div>
+        
+        <div class="testimonials-slider">
+            <div class="testimonial active">
+                <div class="testimonial-content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"EliteSpace transformed our apartment beyond expectations. The Premium Eco package delivered everything promised - beautiful design, quality materials, and on-time delivery. The warranty gives us complete peace of mind."</p>
+                    <div class="testimonial-author">
+                        <img src="images/testimonials/client1.jpg" alt="Sarah Johnson">
+                        <div>
+                            <h4>Sarah Johnson</h4>
+                            <span>Premium Eco Package</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonial">
+                <div class="testimonial-content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"As a property investor, I needed a reliable partner for quick, high-quality renovations. EliteSpace delivered our Luxury package on time with exceptional quality. The smart home integration is incredible."</p>
+                    <div class="testimonial-author">
+                        <img src="images/testimonials/client2.jpg" alt="Michael Chen">
+                        <div>
+                            <h4>Michael Chen</h4>
+                            <span>Luxury Package</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonial">
+                <div class="testimonial-content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"The Ultra Luxury package exceeded all expectations. The attention to detail, premium materials, and smart home features create a truly exceptional living experience. Worth every penny."</p>
+                    <div class="testimonial-author">
+                        <img src="images/testimonials/client3.jpg" alt="Elena Rodriguez">
+                        <div>
+                            <h4>Elena Rodriguez</h4>
+                            <span>Ultra Luxury Package</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="testimonial-nav">
+            <button class="prev-testimonial"><i class="fas fa-chevron-left"></i></button>
+            <div class="testimonial-dots"></div>
+            <button class="next-testimonial"><i class="fas fa-chevron-right"></i></button>
+        </div>
     </section>
 
     <!-- Contact Section -->
     <section class="contact-section">
-        <!-- Elegant contact form -->
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Ready to Transform Your Space?</h2>
+                <p>Let's discuss your renovation project and create something extraordinary together.</p>
+                
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Call Us</h4>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email Us</h4>
+                            <p>info@elitespace.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Visit Us</h4>
+                            <p>123 Luxury Avenue, Suite 100<br>Premium District, City</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-form">
+                <form id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="property-size">Property Size (m²)</label>
+                            <input type="number" id="property-size" min="100" max="400">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="tier-interest">Interested Tier</label>
+                        <select id="tier-interest">
+                            <option value="">Select a tier</option>
+                            <option value="premium-eco">Premium Eco</option>
+                            <option value="premium">Premium</option>
+                            <option value="luxury">Luxury</option>
+                            <option value="ultra-luxury">Ultra Luxury</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Project Details</label>
+                        <textarea id="message" rows="4" placeholder="Tell us about your project, timeline, and any specific requirements..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
     </section>
 
     <!-- Footer -->
     <footer class="luxury-footer">
-        <!-- Premium footer with subtle animations -->
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <h3>EliteSpace</h3>
+                    <p>Luxury Turnkey Renovations</p>
+                </div>
+                <p>Transforming spaces into extraordinary experiences with premium materials, expert craftsmanship, and guaranteed results.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Our Services</h4>
+                <ul>
+                    <li><a href="#tiers">Renovation Tiers</a></li>
+                    <li><a href="#process">Process</a></li>
+                    <li><a href="#materials">Materials</a></li>
+                    <li><a href="#warranty">Warranty</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#calculator">Pricing Calculator</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <div class="contact-info">
+                    <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                    <p><i class="fas fa-envelope"></i> info@elitespace.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Luxury Avenue, Suite 100</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 EliteSpace. All rights reserved. | Privacy Policy | Terms of Service</p>
+        </div>
     </footer>
 
     <!-- JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/animations.js"></script>
 </body>
